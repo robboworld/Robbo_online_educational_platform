@@ -95,6 +95,7 @@ CELERY_TIMEZONE: UTC
 CERTIFICATE_TEMPLATE_LANGUAGES:
     en: English
     es: Español
+    ru: Russian
 CERT_QUEUE: certificates
 CMS_BASE: edx.devstack.studio:8010
 CODE_JAIL:

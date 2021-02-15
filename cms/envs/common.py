@@ -296,7 +296,7 @@ FEATURES = {
     'ORGANIZATIONS_APP': False,
 
     # Show the language selector in the header
-    'SHOW_HEADER_LANGUAGE_SELECTOR': False,
+    'SHOW_HEADER_LANGUAGE_SELECTOR': True,
 
     # At edX it's safe to assume that English transcripts are always available
     # This is not the case for all installations.
@@ -1001,6 +1001,7 @@ LANGUAGE_DICT = dict(LANGUAGES)
 CERTIFICATE_TEMPLATE_LANGUAGES = {
     'en': 'English',
     'es': 'Español',
+    'ru': 'Russian',
 }
 
 USE_I18N = True
