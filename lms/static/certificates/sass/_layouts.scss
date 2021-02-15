@@ -223,6 +223,9 @@
   .accomplishment-orgs {
     @include make-container();
 
+    float: left;
+    width: 50%;
+
     .wrapper-orgs {
       @include text-align(center);
 
@@ -236,22 +239,22 @@
       display: inline-block;
       vertical-align: middle;
       height: rem(100);
-      width: calc(50% - 1rem);
+      width: calc(70% - 1rem); /*50% - 1rem*/
 
       &:last-child {
         @include margin-right(0);
       }
 
       @include media-breakpoint-up(md) {
-        @include make-col(3);
+        @include make-col(12); /*3*/
       }
 
       @include media-breakpoint-up(lg) {
-        @include make-col(2);
+        @include make-col(12); /*2*/
       }
 
       @include media-breakpoint-up(xl) {
-        @include make-col(2);
+        @include make-col(12); /*2*/
       }
     }
 
@@ -262,7 +265,7 @@
     }
 
     .organization-logo {
-      max-width: 80%;
+      max-width: 100%; /*80*/
       position: absolute;
       top: 50%;
 
@@ -285,11 +288,13 @@
       display: inline-block;
       vertical-align: middle;
       width: calc(100% - 1rem);
+      max-width: 100%;
 
       @include make-col(12);
 
       @include media-breakpoint-up(md) {
-        @include make-col(4);
+        @include make-col(4); 
+      
       }
 
       @include media-breakpoint-up(lg) {
@@ -297,13 +302,14 @@
       }
 
       @include media-breakpoint-up(xl) {
-        @include make-col(3);
+       /* @include make-col(3);*/
+       @include make-col(12);
       }
 
       .signatory-signature {
         display: block;
         max-width: 100%;
-        max-height: rem(100);
+        max-height: rem(200); /*100*/
         padding: map-get($spacing-vertical, small) map-get($spacing-horizontal, small);
       }
     }

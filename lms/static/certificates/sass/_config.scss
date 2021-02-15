@@ -16,8 +16,11 @@ $gray-transparent:       rgba(65, 65, 65, 0.5);
 $primary-accent:         rgba(41, 145, 195, 100);
 $primary-back:           rgba(204, 227, 240, 100);
 
+$robbo-black:            rgba(0,0,0,100);
+
 // certificate characteristics
 $cert-base-color: $gray-dark;
+//$cert-base-color: $robbo-black;
 $cert-distinguished-color: $primary-accent;
 
 $cert-decorative-color: $gray-back;
