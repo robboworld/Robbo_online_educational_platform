@@ -53,7 +53,7 @@
 
     <%= context.fields /* xss-lint: disable=underscore-not-escaped */ %>
 
-    <div class="form-field checkbox-optional_fields_toggle">
+    <div class="form-field checkbox-optional_fields_toggle hidden">
         <input type="checkbox" id="toggle_optional_fields" class="input-block checkbox"">
         <label for="toggle_optional_fields">
             <span class="label-text">
