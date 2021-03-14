@@ -230,7 +230,7 @@
 .accomplishment-rendering {
   @extend %depth-card;
 
-  /*background-image: url("/static/certificates/images/robbo_background.png"); */
+  background-image: url("/static/certificates/images/robbo_background.png"); 
 
   position: relative;
   top: -(map-get($spacing-vertical, base));
