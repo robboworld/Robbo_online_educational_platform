@@ -15,13 +15,13 @@ course_mode_class = course_mode if course_mode else ''
            <!-- <span class="deco-corner deco-corner-br"></span>    -->
 
             <div class="accomplishment-type">
-                <span class="accomplishment-type-symbol">
-                   <!-- <img class="src" src="/static/certificates/images/ico-${course_mode_class}.png" alt="Image for course mode of type ${course_mode_class}"> -->
+              <!--  <span class="accomplishment-type-symbol">
+                    <img class="src" src="/static/certificates/images/ico-${course_mode_class}.png" alt="Image for course mode of type ${course_mode_class}"> 
                   
-                </span>
+                </span> -->
                 
                 <img class="robbo-src" src="/static/certificates/images/robbo_mode_1.jpg" alt="Image for course mode of type ${course_mode_class}">
-                <img class="robbo-src" src="/static/certificates/images/robbo_mode_2.jpg" alt="Image for course mode of type ${course_mode_class}">
+                <img class="robbo-src robbo-src-bottom" src="/static/certificates/images/robbo_mode_2.jpg" alt="Image for course mode of type ${course_mode_class}">
 
                 <span class="accomplishment-type-label hd-1"><!--${document_title} --> СЕРТИФИКАТ  </span>
                 <span class="accomplishment-type-label hd-3"><!--${document_title} --> подтверждает, что </span>
@@ -30,13 +30,13 @@ course_mode_class = course_mode if course_mode else ''
             <div class="wrapper-statement-and-signatories">
                 <div class="accomplishment-statement">
                     <p class="accomplishment-statement-lead">
-                        <strong class="accomplishment-recipient hd-1 emphasized"> ${accomplishment_copy_name}
+                        <strong class="accomplishment-recipient  emphasized"> ${accomplishment_copy_name}
                             ___________________________________ 
                         </strong>
-                        <span> Фамилия, имя, отчество </span>
-                        <span class="accomplishment-summary copy copy-lead"><!--${accomplishment_copy_description_full}--></span>
+                        <span class="hd-5"> Фамилия, имя, отчество </span>
+                       <!-- <span class="accomplishment-summary copy copy-lead">${accomplishment_copy_description_full} </span> -->
 
-                        <span class="accomplishment-course hd-1 emphasized">
+                        <span class="accomplishment-course hd-2 emphasized">
                             <span class="accomplishment-course-org"><!--${accomplishment_copy_course_org} --> </span>
                             <span class="accomplishment-course-number"><!--${course_number} --></span>
                             <span>успешно завершил курс </span>  <br/>
@@ -44,8 +44,8 @@ course_mode_class = course_mode if course_mode else ''
                         </span>
                     </p>
 
-                    <p>     ${certificate_date_issued} </p>
-                    <p> ___________________________________ </p>
+                    <p> <u>    ${certificate_date_issued} </u></p>
+                   <!-- <p> ___________________________________ </p> -->
 
                     <p class="accomplishment-statement-detail copy copy-lead"><!--${accomplishment_copy_course_description}--></p>
                 </div>
@@ -90,7 +90,7 @@ course_mode_class = course_mode if course_mode else ''
                                             </p>
                                             <h4 class="signatory-name hd-5">${signatory['name']}</h4>
 
-                                            <img class="signatory-signature" src="${static.url(signatory['signature_image_path'])}" alt="${signatory['name']}">
+                                            <img class="signatory-signature" src="${static.url(signatory['signature_image_path'])}" alt="${signatory['name']}"> 
                                            <!-- <img class="signatory-signature" src="/static/certificates/images/robbo_sig.png" alt="${signatory['name']}"> -->
                                         </div>
                                     % endif

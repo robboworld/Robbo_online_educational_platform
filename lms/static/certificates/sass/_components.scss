@@ -168,11 +168,19 @@
 
   .robbo-src {
     display: block;
-    width: 30%;
+    width: 50%;
     height: 50%;
-    margin-left: 35%;
+    margin-left: 25%;
   }
 
+  .robbo-src-bottom{
+
+    margin-bottom: 20px;
+  }
+  .robbo-src-top{
+
+    margin-top: 65px;
+  }
 
 // main accomplishment
 .accomplishment-main {
@@ -234,6 +242,7 @@
 
   position: relative;
   top: -(map-get($spacing-vertical, base));
+ /* top: -20px;*/
   
   border-top: rem(2) solid $cert-base-color; 
   border-left: rem(2) solid $cert-base-color; 
@@ -246,7 +255,8 @@
     @include text-align(center);
 
     margin-top: -(map-get($spacing-vertical, large));
-    margin-bottom: map-get($spacing-vertical, base);
+   /* margin-bottom: map-get($spacing-vertical, base); */
+   margin-bottom: 1rem;
   }
 
   .accomplishment-type-label,
@@ -258,7 +268,7 @@
     @include make-col(10);
 
     margin: 0 auto;
-    font-weight: 600;
+    font-weight: 1000; /*600*/
   }
 
   .accomplishment-type-symbol {
@@ -292,7 +302,7 @@
   .accomplishment-course {
     @extend %rendering-accomplishment-line;
 
-    font-weight: 600;
+    font-weight: 900; /*600*/
   }
 
   .accomplishment-course-description {

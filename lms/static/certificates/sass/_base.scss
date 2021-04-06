@@ -25,14 +25,14 @@ body {
 // Level one heading
 .hd-1 {
   margin-bottom: map-get($spacing-vertical, small);
-  font-size: rem(38);
+  font-size: rem(50); /*38*/
   line-height: 1.4;
 }
 
 // Level two heading
 .hd-2 {
   margin-bottom: map-get($spacing-vertical, small);
-  font-size: rem(28);
+  font-size: rem(40);/*28*/
   line-height: 1.4;
 }
 
